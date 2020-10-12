@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="" id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const Title = <div className="title">Favorite Book List</div>;
+        const li1 = <li>sach 1</li>; 
+        const li2 = <li>sach 2</li>;
+        const List = React.createElement('ul', null, li1, li2);
+        const App = React.createElement('div', null, Title, List);
+        const root = document.getElementById('root');
+        ReactDOM.render(App, root);
+    </script>
+</body>
+</html>
