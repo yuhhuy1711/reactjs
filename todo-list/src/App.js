@@ -3,18 +3,16 @@ import './App.css';
 import TodoItem from './components/TodoItem';
 
 function App() {
+  let todoItems = [
+    { title: 'tap the duc', isComplete: true}, 
+    { title: 'day som'}, 
+    { title: 'an sang'}];
   return (
-      this.todoItems = [
-        '1', '2', '3'
-      ];
     <div className="App">
       <header className="App-header">
         {
-          this.todoItems.map((item) => <TodoItem title={item}/>);
+          todoItems.map((item, index) => <TodoItem key={index} item={item}/>)
         }
-        <TodoItem title="tap the duc"/>
-        <TodoItem title="day som"/>
-        <TodoItem title="doc sach"/>
       </header>
     </div>
   );

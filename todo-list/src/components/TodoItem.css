@@ -1,0 +1,12 @@
+.TodoItem {
+    font-family: helvetica, sans-serif;
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+
+}
+.TodoItem-completed {
+    text-decoration: line-through;
+    opacity: .3;
+    
+}
