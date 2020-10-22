@@ -5,15 +5,17 @@ import TodoItem from './components/TodoItem';
 function App() {
   let todoItems = [
     { title: 'tap the duc', isComplete: true}, 
-    { title: 'day som'}, 
-    { title: 'an sang'}];
+    { title: 'day som', isComplete: true}, 
+    { title: 'an sang'}
+  ];
   return (
     <div className="App">
-      <header className="App-header">
         {
-          todoItems.map((item, index) => <TodoItem key={index} item={item}/>)
+        todoItems.length > 0 && todoItems.map((item, index) => <TodoItem key={index} item={item}/>)
         }
-      </header>
+        {
+          todoItems.length === 0 && 'Nothing hereee'
+        }
     </div>
   );
 }
